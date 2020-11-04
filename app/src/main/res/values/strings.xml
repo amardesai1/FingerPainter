@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FingerPainter</string>
+    <string name="Colour">Colour</string>
+    <string name="Brush">Brush</string>
+
+    <string name="colourtitle">Press a paint colour:</string>
+
+    <string name="brushtitle">Customize your brush:</string>
+    <string name="thicktitle">Thickness </string>
+    <string name="round">ROUND</string>
+    <string name="square">SQUARE</string>
+    <string name="warning">Please enter all brush settings.</string>
+
+    <string name="done">Done</string>
+</resources>

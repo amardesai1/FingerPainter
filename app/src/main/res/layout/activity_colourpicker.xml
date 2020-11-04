@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/blackbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:onClick="setBlack"
+        app:layout_constraintBottom_toTopOf="@+id/redbutton"
+        app:layout_constraintEnd_toStartOf="@+id/pinkbutton" />
+
+    <Button
+        android:id="@+id/redbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#D32F2F"
+        android:onClick="setRed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/whitebutton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/whitebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:onClick="setWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/greenbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#008000"
+        android:onClick="setGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/whitebutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Button
+        android:id="@+id/bluebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0000ff"
+        android:onClick="setBlue"
+        app:layout_constraintStart_toEndOf="@+id/orangebutton"
+        app:layout_constraintTop_toBottomOf="@+id/greenbutton" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffff00"
+        android:onClick="setYellow"
+        app:layout_constraintEnd_toStartOf="@+id/orangebutton"
+        app:layout_constraintTop_toBottomOf="@+id/redbutton" />
+
+    <Button
+        android:id="@+id/orangebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFA500"
+        android:onClick="setOrange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whitebutton" />
+
+    <Button
+        android:id="@+id/pinkbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff6ec7"
+        android:onClick="setPink"
+        app:layout_constraintBottom_toTopOf="@+id/whitebutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/purplebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#6a0dad"
+        android:onClick="setPurple"
+        app:layout_constraintBottom_toTopOf="@+id/greenbutton"
+        app:layout_constraintStart_toEndOf="@+id/pinkbutton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/colourtitle"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/pinkbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentcolour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orangebutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

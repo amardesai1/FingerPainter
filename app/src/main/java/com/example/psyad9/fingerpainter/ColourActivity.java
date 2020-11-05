@@ -11,14 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ColourActivity extends AppCompatActivity {
 
-    private String colour;
     protected void onCreate(Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_colourpicker);
-        colour = getIntent().getExtras().getString("colour");
+        super.onCreate(savedInstanceState);                                 //Starting Colour picking activity
+        setContentView(R.layout.activity_colourpicker);                     //Displaying Colour picking activity
+        String colour = getIntent().getExtras().getString("colour");           //Saving colour variable passed through intent from main activity
 
-        if(colour.equals("#000000")){
+        if(colour.equals("#000000")){                                        //If statement converting hex colour value to String
             colour = "Black";
         }else if(colour.equals("#D32F2F")) {
             colour = "Red";
@@ -38,11 +37,11 @@ public class ColourActivity extends AppCompatActivity {
             colour = "Purple";
         }
 
-        TextView textView = (TextView) findViewById(R.id.currentcolour);
-        textView.setText("The currently selected colour is "+colour);
+        TextView textView = (TextView) findViewById(R.id.currentcolour);     //Finding instance of textView so it can be edited
+        textView.setText("The currently selected colour is "+ colour);       //Setting text of textview to show which colour is being used
     }
 
-    public void setBlack(View view){
+    public void setBlack(View view){                                        //Button onClick methods to return the chosen colour to the main activity in an intent
         Intent returnIntent = new Intent();
         returnIntent.putExtra("colour","#000000");
         setResult(Activity.RESULT_OK,returnIntent);
